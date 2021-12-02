@@ -1,0 +1,52 @@
+[
+    {
+        "homeName": "uruguay",
+        "awayName": "italy",
+        "homeScore": 6,
+        "awayScore": 6,
+        "totalScore": 12,
+        "createdAt": "2021-12-02T20:24:29.147Z",
+        "updatedAt": "2021-12-02T20:24:29.147Z",
+        "id": "61a92b7de756c00016d71924"
+    },
+    {
+        "homeName": "spain",
+        "awayName": "brazil",
+        "homeScore": 10,
+        "awayScore": 2,
+        "totalScore": 12,
+        "createdAt": "2021-12-02T20:24:01.398Z",
+        "updatedAt": "2021-12-02T20:24:01.398Z",
+        "id": "61a92b61e756c00016d7191e"
+    },
+    {
+        "homeName": "mexico",
+        "awayName": "canada",
+        "homeScore": 0,
+        "awayScore": 5,
+        "totalScore": 5,
+        "createdAt": "2021-12-02T20:23:45.551Z",
+        "updatedAt": "2021-12-02T20:23:45.551Z",
+        "id": "61a92b51e756c00016d7191b"
+    },
+    {
+        "homeName": "argentina",
+        "awayName": "australia",
+        "homeScore": 3,
+        "awayScore": 1,
+        "totalScore": 4,
+        "createdAt": "2021-12-02T20:24:38.221Z",
+        "updatedAt": "2021-12-02T20:24:38.221Z",
+        "id": "61a92b86e756c00016d71927"
+    },
+    {
+        "homeName": "germany",
+        "awayName": "france",
+        "homeScore": 2,
+        "awayScore": 2,
+        "totalScore": 4,
+        "createdAt": "2021-12-02T20:24:12.387Z",
+        "updatedAt": "2021-12-02T20:24:12.387Z",
+        "id": "61a92b6ce756c00016d71921"
+    }
+]

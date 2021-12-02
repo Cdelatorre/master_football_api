@@ -19,7 +19,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 const router = require('./config/routes.js');
 app.use('/', router);
 
-// catch 404 and forward to error handler
 app.use(function (req, res, next) {
   next(createError(404));
 });
@@ -49,31 +48,25 @@ app.use(function (error, req, res, next) {
   res.json(data);
 });
 
-/** 
- * Listen on provided port
- */
 const port = normalizePort(process.env.PORT || '3000');
 app.listen(port, () => {
   console.log(`Listening on port ${port}`);
 });
 
-// Helper functions
 
-/**
- * Normalize a port into a number, string, or false.
- */
 function normalizePort(val) {
   const port = parseInt(val, 10);
 
   if (isNaN(port)) {
-    // named pipe
     return val;
   }
 
   if (port >= 0) {
-    // port number
     return port;
   }
 
   return false;
 }
+
+
+module.exports = app
