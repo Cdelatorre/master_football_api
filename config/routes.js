@@ -4,6 +4,6 @@ const gameController = require('../controllers/game.controller')
 
 router.post('/create', gameController.create)
 router.get('/summary', gameController.summary)
-router.post('/delete/:id', gameController.delete)
+router.delete('/delete/:id', gameController.delete)
 
 module.exports = router;
