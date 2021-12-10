@@ -11,8 +11,8 @@ module.exports.create = (req, res, next) => {
 
   newGame.save()
     .then((game) => res.status(201).json(game))
-    .catch(err => next(err))
-}
+    .catch(err => res.send(400, { errors: err.errors }))
+};
 
 module.exports.summary = (req, res, next) => {
   Game.find()

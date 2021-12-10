@@ -1,5 +1,9 @@
 const mongoose = require('mongoose');
 
+function teamValidator (value) {
+  return this.homeName !== value
+}
+
 const gameSchema = new mongoose.Schema({
   homeName: {
     type: String,
@@ -11,7 +15,8 @@ const gameSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Away team name is required'],
     trim: true,
-    lowercase: true
+    lowercase: true,
+    validate: [teamValidator, 'Teams should have different names!']
   },
   homeScore: {
     type: Number,
